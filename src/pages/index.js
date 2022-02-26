@@ -114,9 +114,6 @@ const IndexPage = () => {
             <a href="https://api.pixijs.io" target="_blank">
               <img src={pixijsLogo} alt="pixijs logo" height="96px" />
             </a>
-            <a href="https://app.teamflowhq.com/signup?referrer=shukant-pal" target="_blank">
-              <img src={teamflowLogo} alt="teamflow logo" height="96px" />
-            </a>
           </section>
         </div>
       </main>
