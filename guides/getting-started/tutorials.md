@@ -44,6 +44,5 @@ Each file should have a corresponding entry with a "title" and optionally a list
   "02-1": {
     "title": "Tutorial 02-1"
   }
-
 }
 ```

@@ -1,0 +1,28 @@
+{
+  "tags": {
+    "title": "Tags",
+    "kind": "category",
+    "children": ["index", "param", "private", "protected", "public", "return", "type"]
+  },
+  "index": {
+    "title": "(overview)"
+  },
+  "param": {
+    "title": "@param"
+  },
+  "private": {
+    "title": "@private"
+  },
+  "protected": {
+    "title": "@protected"
+  },
+  "public": {
+    "title": "@public"
+  },
+  "return": {
+    "title": "@return"
+  },
+  "type": {
+    "title": "@type"
+  }
+}
