@@ -1,9 +1,0 @@
-{
-  "getting-started": {
-    "title": "Getting Started",
-    "children": ["setting-up-tutorials"]
-  },
-  "setting-up-tutorials": {
-    "title": "Setting up tutorials"
-  }
-}
