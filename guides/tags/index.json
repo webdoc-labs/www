@@ -1,0 +1,164 @@
+{
+  "tags_category": {
+    "title": "Tags",
+    "kind": "category",
+    "children": [
+      "tags",
+      "abstract",
+      "access",
+      "author",
+      "class",
+      "copyright",
+      "default",
+      "deprecated",
+      "enum",
+      "event",
+      "example",
+      "extends",
+      "fires",
+      "implements",
+      "inner",
+      "instance",
+      "interface",
+      "license",
+      "member",
+      "memberof",
+      "method",
+      "mixes",
+      "mixin",
+      "name",
+      "namespace",
+      "param",
+      "private",
+      "property",
+      "protected",
+      "public",
+      "readonly",
+      "return",
+      "scope",
+      "see",
+      "since",
+      "static",
+      "todo",
+      "type",
+      "typedef"
+    ]
+  },
+  "tags": {
+    "title": "(overview)"
+  },
+  "abstract": {
+    "title": "@abstract"
+  },
+  "access": {
+    "title": "@access"
+  },
+  "author": {
+    "title": "@author"
+  },
+  "class": {
+    "title": "@class"
+  },
+  "copyright": {
+    "title": "@copyright"
+  },
+  "default": {
+    "title": "@default"
+  },
+  "deprecated": {
+    "title": "@deprecated"
+  },
+  "enum": {
+    "title": "@enum"
+  },
+  "event": {
+    "title": "@event"
+  },
+  "example": {
+    "title": "@example"
+  },
+  "extends": {
+    "title": "@extends"
+  },
+  "fires": {
+    "title": "@fires"
+  },
+  "implements": {
+    "title": "@implements"
+  },
+  "inner": {
+    "title": "@inner"
+  },
+  "instance": {
+    "title": "@instance"
+  },
+  "interface": {
+    "title": "@interface"
+  },
+  "license": {
+    "title": "@license"
+  },
+  "member": {
+    "title": "@member"
+  },
+  "memberof": {
+    "title": "@memberof"
+  },
+  "method": {
+    "title": "@method"
+  },
+  "mixes": {
+    "title": "@mixes"
+  },
+  "mixin": {
+    "title": "@mixin"
+  },
+  "name": {
+    "title": "@name"
+  },
+  "namespace": {
+    "title": "@namespace"
+  },
+  "param": {
+    "title": "@param"
+  },
+  "private": {
+    "title": "@private"
+  },
+  "property": {
+    "title": "@property"
+  },
+  "protected": {
+    "title": "@protected"
+  },
+  "public": {
+    "title": "@public"
+  },
+  "readonly": {
+    "title": "@readonly"
+  },
+  "return": {
+    "title": "@return"
+  },
+  "scope": {
+    "title": "@scope"
+  },
+  "see": {
+    "title": "@see"
+  },
+  "since": {
+    "title": "@since"
+  },
+  "static": {
+    "title": "@static"
+  },
+  "todo": {
+    "title": "@todo"
+  },
+  "type": {
+    "title": "@type"
+  },
+  "typedef": {
+    "title": "@typedef"
+  }
+}
