@@ -1,17 +1,99 @@
 {
-  "tags": {
+  "tags_category": {
     "title": "Tags",
     "kind": "category",
-    "children": ["index", "param", "private", "protected", "public", "return", "type"]
+    "children": [
+      "tags",
+      "abstract",
+      "access",
+      "author",
+      "copyright",
+      "default",
+      "deprecated",
+      "enum",
+      "event",
+      "example",
+      "extends",
+      "fires",
+      "implements",
+      "inner",
+      "instance",
+      "member",
+      "mixes",
+      "license",
+      "param",
+      "private",
+      "property",
+      "protected",
+      "public",
+      "return",
+      "scope",
+      "static",
+      "type"
+    ]
   },
-  "index": {
+  "tags": {
     "title": "(overview)"
+  },
+  "abstract": {
+    "title": "@abstract"
+  },
+  "access": {
+    "title": "@access"
+  },
+  "author": {
+    "title": "@author"
+  },
+  "copyright": {
+    "title": "@copyright"
+  },
+  "default": {
+    "title": "@default"
+  },
+  "deprecated": {
+    "title": "@deprecated"
+  },
+  "enum": {
+    "title": "@enum"
+  },
+  "event": {
+    "title": "@event"
+  },
+  "example": {
+    "title": "@example"
+  },
+  "extends": {
+    "title": "@extends"
+  },
+  "fires": {
+    "title": "@fires"
+  },
+  "implements": {
+    "title": "@implements"
+  },
+  "inner": {
+    "title": "@inner"
+  },
+  "instance": {
+    "title": "@instance"
+  },
+  "member": {
+    "title": "@member"
+  },
+  "mixes": {
+    "title": "@mixes"
+  },
+  "license": {
+    "title": "@license"
   },
   "param": {
     "title": "@param"
   },
   "private": {
     "title": "@private"
+  },
+  "property": {
+    "title": "@property"
   },
   "protected": {
     "title": "@protected"
@@ -21,6 +103,12 @@
   },
   "return": {
     "title": "@return"
+  },
+  "scope": {
+    "title": "@scope"
+  },
+  "static": {
+    "title": "@static"
   },
   "type": {
     "title": "@type"
