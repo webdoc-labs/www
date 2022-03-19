@@ -23,6 +23,7 @@
         }
       }
     },
+    "repository": "https://source.shukantpal.com/webdoc-labs/www",
     "meta": {
       "og:title": "webdoc",
       "og:description": "webdoc is the next generation documentation engine for the web ecosystem!",

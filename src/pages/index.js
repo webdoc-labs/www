@@ -5,6 +5,8 @@ import { Icon, Header } from '../app'
 import '../styles/index.scss'
 import githubIcon from '../images/github.png'
 import twitterIcon from '../images/twitter.png'
+import webdocConfig from '../../webdoc.conf.json'
+import { hljs } from '../highlight.min'
 
 // styles
 const headingAccentStyles = {
@@ -57,54 +59,60 @@ const docLink = {
   url: "https://www.gatsbyjs.com/docs/",
   color: "#8954A8",
 }
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
+const codeStyle = {
+  backgroundColor: '#f3f3f3',
+  borderRadius: 8,
+  fontFamily: 'Consolas',
+  fontSize: 14,
+  padding: 10
 }
-const socialLinksStyle = {
-  alignItems: 'center',
-  display: 'flex',
-  flexDirection: 'row',
-  marginTop: '32px',
-  gap: '16px'
+const preStyle = {
+  backgroundColor: '#f3f3f3',
+  borderRadius: 8,
+  marginLeft: 8,
+  padding: 0,
+  height: 'fit-content'
 }
 
 // data
 
 // markup
 const IndexPage = () => {
+  React.useLayoutEffect(() => {
+    hljs.highlightAll()
+  }, []);
+
   return (
     <div className="root">
       <Header />
       <title>webdoc - Home</title>
-      <header>
-        <h1>
-          Documentation <br />
-          Generator
-        </h1>
-        <h3>
-          webdoc is a platform for documenting JavaScript and
-          TypeScript code, guides & tutorials, monorepos, ecosystems, and much more.
-        </h3>
-        <section style={socialLinksStyle}>
-          <a href="https://twitter.com/webdoc11" target="_blank">
-            <Icon src={twitterIcon} width={32} />
-          </a>
-          <a href="https://github.com/webdoc-labs/webdoc" target="_blank">
-            <Icon src={githubIcon} width={32} />
-          </a>
+      <header className="dual-header">
+        <section className="dual-header-title">
+          <h1>
+            Documentation <br />
+            Generator
+          </h1>
+          <h3>
+            webdoc is a platform for documenting JavaScript and
+            TypeScript code, guides & tutorials, monorepos, ecosystems, and much more.
+          </h3>
+          <section className="flex-row">
+            <a href="/guides/index.html" className="button button-primary">
+              Get Started
+            </a>
+            <pre style={preStyle}>
+              <code style={codeStyle}>
+                npm i --save-dev @webdoc/cli
+              </code>
+            </pre>
+          </section>
+        </section>
+        <section>
+          <pre className="language-json">
+            <code style={codeStyle}>
+              {`// This site's webdoc.conf.json\n${JSON.stringify(webdocConfig, null, 4)}`}
+            </code>
+          </pre>
         </section>
       </header>
       <main>
@@ -126,6 +134,8 @@ const IndexPage = () => {
           Made with ❤️ by <a href="https://twitter.com/ShukantP" target="_blank">Shukant Pal</a>
         </p>
       </footer>
+      <link rel="stylesheet"
+            href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css" />
     </div>
   )
 }

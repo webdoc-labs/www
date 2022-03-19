@@ -1,0 +1,15 @@
+.button {
+  border-radius: 8px;
+  display: block;
+  font-family: Inter;
+  font-size: 16px;
+  height: fit-content;
+  padding: 8px 12px;
+}
+
+*.button-primary {
+  background-color: #f6bf68;
+  color: #333 !important;
+  font-weight: 600;
+  box-shadow: 0 4px 4px 0 #EEE;
+}
