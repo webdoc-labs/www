@@ -138,6 +138,7 @@ const IndexPage = () => {
     <div className="root">
       <Header />
       <title>webdoc - Home</title>
+      <script defer data-domain="webdoclabs.com" src="https://plausible.io/js/plausible.js"></script>
       <header className="dual-header">
         <section className="dual-header-title">
           <h1>
@@ -194,6 +195,7 @@ const IndexPage = () => {
       </footer>
       <link rel="stylesheet"
             href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css" />
+
     </div>
   )
 }
