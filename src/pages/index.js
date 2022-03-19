@@ -74,9 +74,61 @@ const preStyle = {
   height: 'fit-content'
 }
 
+const toolLayoutStyle = {
+  display: 'flex',
+  flexDirection: 'row',
+  gap: 16
+}
+const toolStyle = {
+  border: '1px solid rgba(0, 0, 0, .16)',
+  borderRadius: 8,
+  display: 'block',
+  fontSize: 14,
+  padding: '12px 16px',
+  width: 200
+}
+const toolContentStyle = {
+  color: '#333',
+}
+
+const bannerStyle = {
+  textAlign: 'center'
+}
+
 // data
+const tools = [
+  {
+    title: 'Analytics',
+    content: 'Natively integrate with Google Analytics and Plausible',
+    href: '/guides/getting-started/integrations.html'
+  },
+  {
+    title: 'Guides',
+    content: 'Out of the box support for writing documentation guides',
+    href: '/guides/getting-started/tutorials.html'
+  },
+  {
+    title: 'JSDoc tags',
+    content: 'Nearly all of the JSDoc tags are supported',
+    href: '/guides/tags/tags.html'
+  }
+]
 
 // markup
+const Tools = React.memo(() => {
+  return (
+    <div style={toolLayoutStyle}>
+      {tools.map((tool) => (
+        <a href={tool.href} style={toolStyle}>
+          <h4>{tool.title}</h4>
+          <p style={toolContentStyle}>{tool.content}</p>
+        </a>
+      ))}
+    </div>
+  )
+})
+
+
 const IndexPage = () => {
   React.useLayoutEffect(() => {
     hljs.highlightAll()
@@ -117,6 +169,12 @@ const IndexPage = () => {
       </header>
       <main>
         <div>
+          <h2>One tool to rule it all</h2>
+          <section>
+            <Tools />
+          </section>
+        </div>
+        <div style={bannerStyle}>
           <h2>See who's using webdoc</h2>
           <br />
           <section>
