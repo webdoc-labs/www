@@ -62,7 +62,7 @@ const docLink = {
 const codeStyle = {
   backgroundColor: '#f3f3f3',
   borderRadius: 8,
-  fontFamily: 'Consolas',
+  fontFamily: 'Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif',
   fontSize: 14,
   padding: 10
 }
