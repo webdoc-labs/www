@@ -12,7 +12,7 @@
     "start": "gatsby develop",
     "build:gatsby": "gatsby build && rm -rf docs && mv public docs",
     "build:webdoc": "webdoc --tutorials ./guides --site-root guides --site-domain https://www.webdoclabs.com --verbose",
-    "build": "yarn build:gatsby && yarn build:webdoc",
+    "build": "yarn build:gatsby && yarn build:webdoc && echo \"https://github.com/webdoc-labs/www\" > docs/CNAME",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
