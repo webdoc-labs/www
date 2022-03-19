@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "@babel/core": "^7.17.4",
+    "@fontsource/inter": "^4.5.5",
+    "@fontsource/roboto": "^4.5.3",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@webdoc/cli": "^1.5.7",
@@ -27,6 +29,7 @@
     "gatsby-plugin-sass": "^5.7.0",
     "gatsby-plugin-sharp": "^4.7.0",
     "gatsby-plugin-sitemap": "^5.7.0",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^4.7.0",
     "gatsby-transformer-sharp": "^4.7.0",
     "react": "^17.0.1",
