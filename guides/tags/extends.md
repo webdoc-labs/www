@@ -1,5 +1,9 @@
 # @extends
 
+### Synonyms
+
+[@extends](./extends.html)
+
 ### Syntax
 
 `@extends <super_class_name>`

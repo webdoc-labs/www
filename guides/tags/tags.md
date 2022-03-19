@@ -8,7 +8,7 @@ This directory lists all the different tags available to use in documenting your
 
 #### C
 
-[@copyright](./copyright.html)
+[@class](./class.html) [@copyright](./copyright.html)
 
 #### D
 
@@ -24,7 +24,7 @@ This directory lists all the different tags available to use in documenting your
 
 #### I
 
-[@inner](./inner.html) [@instance](./instance.html)
+[@inner](./inner.html) [@instance](./instance.html) [@interface](./interface.html)
 
 #### L
 
@@ -32,7 +32,13 @@ This directory lists all the different tags available to use in documenting your
 
 #### M
 
-[@member](./member.html) [@mixes](./mixes.html)
+[@member](./member.html) [@memberof](./memberof.html) [@method](./method.html) [@mixes](./mixes.html)
+
+[@mixin](./mixin.html)
+
+#### N
+
+[@name](./name.html) [@namespace](./namespace.html)
 
 #### P
 [@param](./param.html) [@private](./private.html) [@property](./property.html) [@protected](./protected.html)
@@ -40,11 +46,11 @@ This directory lists all the different tags available to use in documenting your
 [@public](./public.html)
 
 #### R
-[@return](./return.html)
+[@readonly](./readonly.html) [@return](./return.html)
 
 #### S
 
-[@scope](./scope.html) [@static](./static.html)
+[@scope](./scope.html) [@since](./since.html) [@static](./static.html)
 
 #### T
-[@type](./type.html)
+[@throws](./throws.html) [@type](./type.html) [@typedef](./typedef.html)

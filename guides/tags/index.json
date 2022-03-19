@@ -7,6 +7,7 @@
       "abstract",
       "access",
       "author",
+      "class",
       "copyright",
       "default",
       "deprecated",
@@ -18,18 +19,29 @@
       "implements",
       "inner",
       "instance",
-      "member",
-      "mixes",
+      "interface",
       "license",
+      "member",
+      "memberof",
+      "method",
+      "mixes",
+      "mixin",
+      "name",
+      "namespace",
       "param",
       "private",
       "property",
       "protected",
       "public",
+      "readonly",
       "return",
       "scope",
+      "see",
+      "since",
       "static",
-      "type"
+      "todo",
+      "type",
+      "typedef"
     ]
   },
   "tags": {
@@ -43,6 +55,9 @@
   },
   "author": {
     "title": "@author"
+  },
+  "class": {
+    "title": "@class"
   },
   "copyright": {
     "title": "@copyright"
@@ -77,14 +92,32 @@
   "instance": {
     "title": "@instance"
   },
+  "interface": {
+    "title": "@interface"
+  },
+  "license": {
+    "title": "@license"
+  },
   "member": {
     "title": "@member"
+  },
+  "memberof": {
+    "title": "@memberof"
+  },
+  "method": {
+    "title": "@method"
   },
   "mixes": {
     "title": "@mixes"
   },
-  "license": {
-    "title": "@license"
+  "mixin": {
+    "title": "@mixin"
+  },
+  "name": {
+    "title": "@name"
+  },
+  "namespace": {
+    "title": "@namespace"
   },
   "param": {
     "title": "@param"
@@ -101,16 +134,31 @@
   "public": {
     "title": "@public"
   },
+  "readonly": {
+    "title": "@readonly"
+  },
   "return": {
     "title": "@return"
   },
   "scope": {
     "title": "@scope"
   },
+  "see": {
+    "title": "@see"
+  },
+  "since": {
+    "title": "@since"
+  },
   "static": {
     "title": "@static"
   },
+  "todo": {
+    "title": "@todo"
+  },
   "type": {
     "title": "@type"
+  },
+  "typedef": {
+    "title": "@typedef"
   }
 }
