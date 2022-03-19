@@ -1,0 +1,36 @@
+{
+  "source": {
+    "includes": "guides/",
+    "excludePattern": "json$"
+  },
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "opts": {
+    "destination": "docs/guides",
+    "export": false
+  },
+  "template": {
+    "applicationName": "{ <i>webdoc</i> }",
+    "appBar": {
+      "items": {
+        "main-site": {
+          "name": "Main Site",
+          "uri": "https://www.webdoclabs.com"
+        },
+        "tutorials": {
+          "name": "Guides"
+        }
+      }
+    },
+    "repository": "https://source.shukantpal.com/webdoc-labs/www",
+    "meta": {
+      "og:title": "webdoc",
+      "og:description": "webdoc is the next generation documentation engine for the web ecosystem!",
+      "title": "webdoc"
+    },
+    "routes": {
+      "tutorials": "/"
+    }
+  }
+}

@@ -1,10 +1,12 @@
 import * as React from "react"
 import pixijsLogo from '../images/pixijs.png'
 import teamflowLogo from '../images/teamflow.png'
-import { Icon } from '../app'
+import { Icon, Header } from '../app'
 import '../styles/index.scss'
 import githubIcon from '../images/github.png'
 import twitterIcon from '../images/twitter.png'
+import webdocConfig from '../../webdoc.conf.json'
+import { hljs } from '../highlight.min'
 
 // styles
 const headingAccentStyles = {
@@ -57,64 +59,129 @@ const docLink = {
   url: "https://www.gatsbyjs.com/docs/",
   color: "#8954A8",
 }
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
+const codeStyle = {
+  backgroundColor: '#f3f3f3',
+  borderRadius: 8,
+  fontFamily: 'Consolas',
+  fontSize: 14,
+  padding: 10
 }
-const socialLinksStyle = {
-  alignItems: 'center',
+const preStyle = {
+  backgroundColor: '#f3f3f3',
+  borderRadius: 8,
+  marginLeft: 8,
+  padding: 0,
+  height: 'fit-content'
+}
+
+const toolLayoutStyle = {
   display: 'flex',
   flexDirection: 'row',
-  marginTop: '32px',
-  gap: '16px'
+  gap: 16
+}
+const toolStyle = {
+  border: '1px solid rgba(0, 0, 0, .16)',
+  borderRadius: 8,
+  display: 'block',
+  fontSize: 14,
+  padding: '12px 16px',
+  width: 200
+}
+const toolContentStyle = {
+  color: '#333',
+}
+
+const bannerStyle = {
+  textAlign: 'center'
 }
 
 // data
+const tools = [
+  {
+    title: 'Analytics',
+    content: 'Natively integrate with Google Analytics and Plausible',
+    href: '/guides/getting-started/integrations.html'
+  },
+  {
+    title: 'Guides',
+    content: 'Out of the box support for writing documentation guides',
+    href: '/guides/getting-started/tutorials.html'
+  },
+  {
+    title: 'JSDoc tags',
+    content: 'Nearly all of the JSDoc tags are supported',
+    href: '/guides/tags/tags.html'
+  }
+]
 
 // markup
+const Tools = React.memo(() => {
+  return (
+    <div style={toolLayoutStyle}>
+      {tools.map((tool) => (
+        <a href={tool.href} style={toolStyle}>
+          <h4>{tool.title}</h4>
+          <p style={toolContentStyle}>{tool.content}</p>
+        </a>
+      ))}
+    </div>
+  )
+})
+
+
 const IndexPage = () => {
+  React.useLayoutEffect(() => {
+    hljs.highlightAll()
+  }, []);
+
   return (
     <div className="root">
-      <header>
-        <title>Home Page</title>
-        <h1>
-          Documentation <br />
-          Generator
-        </h1>
-        <h3>
-          webdoc is a platform for documenting JavaScript and
-          TypeScript code, guides & tutorials, monorepos, ecosystems, and much more.
-        </h3>
-        <section style={socialLinksStyle}>
-          <a href="https://twitter.com/webdoc11" target="_blank">
-            <Icon src={twitterIcon} width={32} />
-          </a>
-          <a href="https://github.com/webdoc-labs/webdoc" target="_blank">
-            <Icon src={githubIcon} width={32} />
-          </a>
+      <Header />
+      <title>webdoc - Home</title>
+      <header className="dual-header">
+        <section className="dual-header-title">
+          <h1>
+            Documentation <br />
+            Generator
+          </h1>
+          <h3>
+            webdoc is a platform for documenting JavaScript and
+            TypeScript code, guides & tutorials, monorepos, ecosystems, and much more.
+          </h3>
+          <section className="flex-row">
+            <a href="/guides/index.html" className="button button-primary">
+              Get Started
+            </a>
+            <pre style={preStyle}>
+              <code style={codeStyle}>
+                npm i --save-dev @webdoc/cli
+              </code>
+            </pre>
+          </section>
+        </section>
+        <section>
+          <pre className="language-json">
+            <code style={codeStyle}>
+              {`// This site's webdoc.conf.json\n${JSON.stringify(webdocConfig, null, 4)}`}
+            </code>
+          </pre>
         </section>
       </header>
       <main>
         <div>
+          <h2>One tool to rule it all</h2>
+          <section>
+            <Tools />
+          </section>
+        </div>
+        <div style={bannerStyle}>
           <h2>See who's using webdoc</h2>
           <br />
           <section>
             <a href="https://api.pixijs.io" target="_blank">
               <img src={pixijsLogo} alt="pixijs logo" height="96px" />
             </a>
-            <a href="https://app.teamflowhq.com/signup?referrer=shukant-pal" target="_blank">
+            <a href="https://www.teamflowhq.com" target="_blank">
               <img src={teamflowLogo} alt="teamflow logo" height="96px" />
             </a>
           </section>
@@ -125,6 +192,8 @@ const IndexPage = () => {
           Made with ❤️ by <a href="https://twitter.com/ShukantP" target="_blank">Shukant Pal</a>
         </p>
       </footer>
+      <link rel="stylesheet"
+            href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css" />
     </div>
   )
 }

@@ -1,0 +1,16 @@
+{
+  "getting-started": {
+    "title": "Getting Started",
+    "kind": "category",
+    "children": ["docs", "tutorials", "integrations"]
+  },
+  "docs": {
+    "title": "Docs"
+  },
+  "tutorials": {
+    "title": "Tutorials"
+  },
+  "integrations": {
+    "title": "Integrations"
+  }
+}

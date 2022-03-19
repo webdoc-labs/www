@@ -1,0 +1,29 @@
+.dual-header {
+  display: flex;
+  flex-direction: row;
+  max-height: 400px;
+  max-width: 100%;
+  text-align: left;
+  width: 100%;
+}
+
+.dual-header > *:first-child {
+  margin-left: 90px;
+}
+
+.dual-header-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+}
+
+.dual-header > *:last-child {
+  background: #f3f3f3;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  flex-grow: 1;
+  margin-left: 100px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
