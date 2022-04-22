@@ -32,5 +32,11 @@
     "routes": {
       "tutorials": "/"
     }
+  },
+  "integrations": {
+    "analytics": {
+      "provider": "plausible",
+      "nakedDomain": "www.webdoclabs.com"
+    }
   }
 }
