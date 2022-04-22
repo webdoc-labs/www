@@ -1,19 +1,21 @@
 # Integrations
 
-webdoc provides integrations for analytics, search, social graphs, and with more to come. These integrations are configured in the `integrations`section of the webdoc configuration.
+webdoc provides integrations for analytics, search, social graphs, and with more to come. These integrations are configured in the `template.integrations`section of the webdoc configuration.
 
 ## Analytics
 
-webdoc allows you to add analytics tracking from [Google Analytics](https://analytics.google.com) or [Plausible](https://plausible.io/). You can configure which analytics provide you use with `integrations.analytics.provider`.
+webdoc allows you to add analytics tracking from [Google Analytics](https://analytics.google.com) or [Plausible](https://plausible.io/). You can configure which analytics provide you use with `template.integrations.analytics.provider`.
 
 ### Google Analytics
 
 ```json
 {
-    "integrations": {
-        "analytics": {
-            "provider": "google-analytics", // Adds GA script to generated pages
-            "trackingID": "UA-XXX-00"       // Unique identifier from GA
+    "template": {
+        "integrations": {
+            "analytics": {
+                "provider": "google-analytics", // Adds GA script to generated pages
+                "trackingID": "UA-XXX-00"       // Unique identifier from GA
+            }
         }
     }
 }
@@ -25,12 +27,14 @@ Plausible is an open-source and privacy friendly analytics service.
 
 ```json
 {
-    "integrations": {
-        "analytics": {
-            "provider": "plausible",     // Adds script from plausible.io
-            "nakedDomain": "example.com" // Site domain tagged in plausible.io dashboard
+    "template": {
+        "integrations": {
+            "analytics": {
+                "provider": "plausible",     // Adds script from plausible.io
+                "nakedDomain": "example.com" // Site domain tagged in plausible.io dashboard
+            }
         }
-    }
+    } 
 }
 ```
 
@@ -41,13 +45,15 @@ webdoc provides an integration with Algolia DocSearch so you can serve full-text
 You will need your application id, its api key, and the index name that provides search result in the configuration:
 ```json
 {
-  "integrations": {
-    "search": {
-      "provider": "algolia",
-      "apiKey": "kadlfj232983lkqwem",
-      "indexName": "webdoc-example",
-      "appId": "349o39841;akdsfu"
+    "template": {
+        "integrations": {
+            "search": {
+              "provider": "algolia",
+              "apiKey": "kadlfj232983lkqwem",
+              "indexName": "webdoc-example",
+              "appId": "349o39841;akdsfu"
+            }
+        }
     }
-  }
 }
 ```
