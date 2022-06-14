@@ -2284,25 +2284,25 @@
     "@webassemblyjs/ast" "1.11.1"
     "@xtuc/long" "4.2.2"
 
-"@webdoc/cli@^1.5.7":
-  version "1.5.7"
-  resolved "https://registry.yarnpkg.com/@webdoc/cli/-/cli-1.5.7.tgz#90d5454d51b5fc3ca0e52b56ed95e4fab0c0acee"
-  integrity sha512-PLZnllUi7hkr8Dkdl2vYT4oyzqXg2aJEPQMhOLFXkybedVYDqC+6cQ9yzI2PKqSg7gIKqZOVKtAKk4ncRO/hSA==
+"@webdoc/cli@1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@webdoc/cli/-/cli-1.6.6.tgz#7ed59c144b38e1f3653e27106e3ffd717d22cf47"
+  integrity sha512-MiYdmqemJfkd1f4LEuPCVmKMGjmuWOrICNbLV0q0HaQ6wRtkIecbeqX9GJGXpXI4Mu/1Fu6A4w4fMdPjhFI2/w==
   dependencies:
-    "@webdoc/default-template" "^1.5.7"
-    "@webdoc/externalize" "^1.5.7"
-    "@webdoc/legacy-template" "^1.5.7"
-    "@webdoc/model" "^1.5.7"
-    "@webdoc/parser" "^1.5.7"
-    "@webdoc/plugin-markdown" "^1.5.7"
-    "@webdoc/template-library" "^1.5.7"
-    "@webdoc/types" "^1.5.7"
+    "@webdoc/default-template" "^1.6.6"
+    "@webdoc/externalize" "^1.6.6"
+    "@webdoc/legacy-template" "^1.6.6"
+    "@webdoc/model" "^1.6.6"
+    "@webdoc/parser" "^1.6.6"
+    "@webdoc/plugin-markdown" "^1.6.6"
+    "@webdoc/template-library" "^1.6.6"
+    "@webdoc/types" "^1.6.6"
     array.prototype.flatmap "~1.2.3"
     fs-extra "^9.0.1"
     globby "11.0.0"
+    highlight.js "~10.7.2"
     lodash.merge "4.6.2"
     markdown-it "^11.0.0"
-    markdown-it-highlightjs "^3.1.0"
     missionlog "1.6.0"
     object.fromentries "^2.0.2"
     perf_hooks "~0.0.1"
@@ -2310,39 +2310,38 @@
     read-pkg-up "~7.0.1"
     yargs "^16.2.0"
 
-"@webdoc/default-template@^1.5.7":
-  version "1.5.7"
-  resolved "https://registry.yarnpkg.com/@webdoc/default-template/-/default-template-1.5.7.tgz#aee3c81eb4d988b385887b1a310b435dee6bc0e1"
-  integrity sha512-GdAzVjxXQYUNgincEHBCHB8xbeOhMBEVYvjjGvjhBL6GCCaXBmVqSOAq8vTQLXmABC/MH74zMTq89jCdw5aECw==
+"@webdoc/default-template@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@webdoc/default-template/-/default-template-1.6.6.tgz#b05ee208420d7565b993dea8bb35e55d4375d8dd"
+  integrity sha512-yQj3bo8t3Y5bBIadXZwKXrX2Au969tOizomuUxOj6SouWC8YSLwx76HkLpvQismyqpKJPlBhN0llkdxN2GsLvw==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/preset-react" "^7.10.1"
-    "@webdoc/model" "^1.5.7"
-    "@webdoc/template-library" "^1.5.7"
-    "@webdoc/types" "^1.5.7"
+    "@webdoc/model" "^1.6.6"
+    "@webdoc/template-library" "^1.6.6"
+    "@webdoc/types" "^1.6.6"
     code-prettify "^0.1.0"
     fs-extra "^9.0.1"
     highlight.js "~10.7.2"
     markdown-it "^11.0.0"
-    markdown-it-highlightjs "^3.1.0"
 
-"@webdoc/externalize@^1.5.7":
-  version "1.5.7"
-  resolved "https://registry.yarnpkg.com/@webdoc/externalize/-/externalize-1.5.7.tgz#ec342032826058cb3f809a59e3186e116a10a5a2"
-  integrity sha512-zkoFQrJdXaRkcIhD/N77vdIGdHj/MBzyjouSY8dmHCW8ZN8JTkycQPKo4W6ClEfNGsAloNPvecQKMIp3tqJciw==
+"@webdoc/externalize@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@webdoc/externalize/-/externalize-1.6.6.tgz#efe72a31398e9400062930004ac186f42980314f"
+  integrity sha512-TY4zrfX07PE0thf1U23AhH2F3GulpYKNjeGey6KDiyUgkyCFwsy6HKkCL0WzjRTT9D7oEuxX1vOh/Yq85OBqXA==
   dependencies:
     "@babel/core" "^7.9.0"
-    "@webdoc/model" "^1.5.7"
-    "@webdoc/types" "^1.5.7"
+    "@webdoc/model" "^1.6.6"
+    "@webdoc/types" "^1.6.6"
     lodash "^4.17.20"
 
-"@webdoc/legacy-template@^1.5.7":
-  version "1.5.7"
-  resolved "https://registry.yarnpkg.com/@webdoc/legacy-template/-/legacy-template-1.5.7.tgz#90f365a7bf2db7edd7becce547ab2b4380381116"
-  integrity sha512-WGeNypvuWl0fyPKb5ArS4d5LpNh1ToyMmcxbTcP4fW4RSbd8KlKkuWX6UbBQmdXaehgukBSSBc8OcaOlNW+Z6Q==
+"@webdoc/legacy-template@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@webdoc/legacy-template/-/legacy-template-1.6.6.tgz#fbad9d6dc3227c079320028319fa685df09926c2"
+  integrity sha512-750ig+oK/5ekZ5MrV67xbbAr6zGqYXVvb7eumglugrt04x8dOnT/21MXYxp2gS8t2NdGm/A8alm4gUNcvf7W0g==
   dependencies:
-    "@webdoc/model" "^1.5.7"
-    "@webdoc/template-library" "^1.5.7"
+    "@webdoc/model" "^1.6.6"
+    "@webdoc/template-library" "^1.6.6"
     bluebird "^3.7.2"
     code-prettify "^0.1.0"
     color-themes-for-google-code-prettify "^2.0.4"
@@ -2357,46 +2356,46 @@
     missionlog "1.6.0"
     open-sans-fonts "^1.6.2"
 
-"@webdoc/model@^1.5.7":
-  version "1.5.7"
-  resolved "https://registry.yarnpkg.com/@webdoc/model/-/model-1.5.7.tgz#7f68bfc30608437d951a63a261f2c0444c780c50"
-  integrity sha512-DbO6qWiwdaPTZWOyR8a7/nj1TMEfMcJz6L97Z46pamNaZCIDO59kcSMEUd4ybPKFaKALBD+EIIM45KRdE8gbGA==
+"@webdoc/model@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@webdoc/model/-/model-1.6.6.tgz#6ca5e008b1b2f62a0f93be341467926054fadcf8"
+  integrity sha512-Ul27xoMOvSyoHNLNDAtFz74xY+rCCUEl15I6MnbUk8zTD8kG1tucycION4u0MVUr12OOgFUvuGzpWYvZ52CT5A==
   dependencies:
-    "@webdoc/types" "^1.5.7"
+    "@webdoc/types" "^1.6.6"
     catharsis "0.8.11"
     nanoid "~3.1.16"
     taffydb "2.7.3"
 
-"@webdoc/parser@^1.5.7":
-  version "1.5.7"
-  resolved "https://registry.yarnpkg.com/@webdoc/parser/-/parser-1.5.7.tgz#363d07da3ae4d0d543efd2af1bad4262456f8eb8"
-  integrity sha512-/8WlIzMW9PYoakkysdXGUMqf4szYXuzIdWZA95McXOlN4VQoZuF7Ollx7xQ8Jn3lrPFgH+9Novsvqx/vIJI0mg==
+"@webdoc/parser@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@webdoc/parser/-/parser-1.6.6.tgz#2cda741bc7baa56e62d42325bb1f4e34a79a967f"
+  integrity sha512-vqPKl4bsCzqOQU7R+gCoq0+AR+wOTWVqaNnJWlYCIMtzY+S0yezV5SvDM7fc2BLipbE0VGBUeubU0Nf9/k3l3w==
   dependencies:
     "@babel/parser" "^7.9.4"
     "@babel/traverse" "7.9.5"
     "@babel/types" "7.9.5"
-    "@webdoc/model" "^1.5.7"
-    "@webdoc/types" "^1.5.7"
+    "@webdoc/model" "^1.6.6"
+    "@webdoc/types" "^1.6.6"
     lodash "^4.17.20"
     missionlog "1.6.0"
     nanoid "~3.1.16"
 
-"@webdoc/plugin-markdown@^1.5.7":
-  version "1.5.7"
-  resolved "https://registry.yarnpkg.com/@webdoc/plugin-markdown/-/plugin-markdown-1.5.7.tgz#442dc3c9b25458b80d9f24fafb326981af14030d"
-  integrity sha512-o2hrc+DpsDuGjurcemN4Fhka8Qx1vPNX0Xth6xnEDYjMQ+yg1wX5NxMDUNJpfI3KQVFQMBjJu/R0WBL4ImDY9g==
+"@webdoc/plugin-markdown@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@webdoc/plugin-markdown/-/plugin-markdown-1.6.6.tgz#3546c4b85e8bb4e9ed18e0fc70ac6d0088ea551c"
+  integrity sha512-Zbc/2+23gsYXjSKLVwOLa5CuEl3HI+x0rJRs3b8AllPPpM0f4NgVXlPAP/uLHQIrJ6mf5qOA+85/oDg9aUAwMw==
   dependencies:
+    highlight.js "~10.7.2"
     markdown-it "^11.0.0"
-    markdown-it-highlightjs "^3.1.0"
 
-"@webdoc/template-library@^1.5.7":
-  version "1.5.7"
-  resolved "https://registry.yarnpkg.com/@webdoc/template-library/-/template-library-1.5.7.tgz#a50eff2d6e2db9e79803af5ccdc5df13a980a4b1"
-  integrity sha512-TtfZ8RKXuYdrOpQPnu8/wO6sc6Sacaql2ctwyLPI/HhmmQa1KFvjIFIbXSu4ory/VENUpgtQ+9+778ok+r7MmQ==
+"@webdoc/template-library@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@webdoc/template-library/-/template-library-1.6.6.tgz#0807e5e2c765869588757ec0c7d01c756fe5202d"
+  integrity sha512-AsCf3WOTAPBDwTVwqnYy6TFitMirsAEsrnQOxsTBCc09C6Mb0eDxcEc8PVeuvQMxK/zW2xyze7uLVa60/rRQ4Q==
   dependencies:
-    "@webdoc/externalize" "^1.5.7"
-    "@webdoc/model" "^1.5.7"
-    "@webdoc/types" "^1.5.7"
+    "@webdoc/externalize" "^1.6.6"
+    "@webdoc/model" "^1.6.6"
+    "@webdoc/types" "^1.6.6"
     catharsis "0.8.11"
     fs-extra "^9.0.1"
     git-branch "2.0.1"
@@ -2406,10 +2405,10 @@
     node-fetch "~2.6.1"
     parse-github-url "1.0.2"
 
-"@webdoc/types@^1.5.7":
-  version "1.5.7"
-  resolved "https://registry.yarnpkg.com/@webdoc/types/-/types-1.5.7.tgz#50ee6ac5d2740401b98707baf355ca5155e58f18"
-  integrity sha512-6MpgiJZtJyE6a2ZvxfLhl5vXIwD0HUzXPC3VGtntC60+4xbJlAtuYlcJxNc6oeWQo2Jk+NmXv2m+UUgM0UbdKQ==
+"@webdoc/types@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@webdoc/types/-/types-1.6.6.tgz#723ed3041723f55655d4370ea6bbbebc548e182c"
+  integrity sha512-GrXtaUIkrXS80zIDIXpU8XrDmlci5S0+TE2fR3L9cM4v/I6ySn52/i6PWwR2pZbr0dih7ao/qirkv8ygfW0B/Q==
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
