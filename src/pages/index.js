@@ -184,7 +184,7 @@ const IndexPage = () => {
               <img src={pixijsLogo} alt="pixijs logo" height="96px" />
             </a>
             <a href="https://www.melonjs.org" target="_blank">
-              <img src={melonJsLogo} alt="melonjs logo" height="192px" />
+              <img src={melonJsLogo} alt="melonjs logo" height="96px" />
             </a>
           </section>
         </div>
