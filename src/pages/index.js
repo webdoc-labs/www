@@ -1,6 +1,7 @@
 import * as React from "react"
 import pixijsLogo from '../images/pixijs.png'
 import teamflowLogo from '../images/teamflow.png'
+import melonJsLogo from '../images/melonjs-logo.png'
 import { Icon, Header } from '../app'
 import '../styles/index.scss'
 import githubIcon from '../images/github.png'
@@ -182,8 +183,8 @@ const IndexPage = () => {
             <a href="https://api.pixijs.io" target="_blank">
               <img src={pixijsLogo} alt="pixijs logo" height="96px" />
             </a>
-            <a href="https://www.teamflowhq.com" target="_blank">
-              <img src={teamflowLogo} alt="teamflow logo" height="96px" />
+            <a href="https://www.melonjs.org" target="_blank">
+              <img src={melonJsLogo} alt="melonjs logo" height="192px" />
             </a>
           </section>
         </div>
