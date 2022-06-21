@@ -96,6 +96,10 @@ const bannerStyle = {
   textAlign: 'center'
 }
 
+const centerStyle = {
+  textAlign: 'center'
+}
+
 // data
 const tools = [
   {
@@ -132,24 +136,24 @@ const Tools = React.memo(() => {
 
 const IndexPage = () => {
   React.useLayoutEffect(() => {
-    hljs.highlightAll()
+    hljs.highlightAll();
+    document.body.classList.add("full-width");
   }, []);
 
   return (
     <div className="root">
       <Header />
       <title>webdoc - Home</title>
-      <script defer data-domain="webdoclabs.com" src="https://plausible.io/js/plausible.js"></script>
       <header className="dual-header">
         <section className="dual-header-title">
-          <h1>
+          <h2>
             Documentation <br />
             Generator
-          </h1>
-          <h3>
+          </h2>
+          <h4>
             webdoc is a platform for documenting JavaScript and
             TypeScript code, guides & tutorials, monorepos, ecosystems, and much more.
-          </h3>
+          </h4>
           <section className="flex-row">
             <a href="/guides/index.html" className="button button-primary">
               Get Started
@@ -171,14 +175,14 @@ const IndexPage = () => {
       </header>
       <main>
         <div>
-          <h2>One tool to rule it all</h2>
+          <h3 style={centerStyle}>One tool to rule it all</h3>
           <section>
             <Tools />
           </section>
         </div>
+        <br />
         <div style={bannerStyle}>
-          <h2>See who's using webdoc</h2>
-          <br />
+          <h3 style={centerStyle}>See who's using webdoc</h3>
           <section>
             <a href="https://api.pixijs.io" target="_blank">
               <img src={pixijsLogo} alt="pixijs logo" height="96px" />
@@ -196,7 +200,6 @@ const IndexPage = () => {
       </footer>
       <link rel="stylesheet"
             href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css" />
-
     </div>
   )
 }
