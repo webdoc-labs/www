@@ -17,13 +17,15 @@ const titleStyle = {
   fontWeight: 700,
   marginLeft: 90,
   marginRight: 32,
-  lineHeight: 33
+  lineHeight: 33,
+  textDecoration: 'none',
 }
 
 const titleBarStyle = {
   alignItems: 'center',
   display: 'flex',
   flexDirection: 'row',
+  gap: '2em'
 }
 
 const contentStyle = {
@@ -50,9 +52,12 @@ const iconStyle = {
 export const Header = () => (
   <nav style={headerStyle}>
     <section style={titleBarStyle}>
-      <span style={titleStyle}>{'{ '}<i>webdoc</i>{' }'}</span>
+      <a href="/" style={titleStyle}>{'{ '}<i>webdoc</i>{' }'}</a>
       <a href="/guides" style={textLinkStyle}>
         <span>Guides</span>
+      </a>
+      <a href="/pricing" style={textLinkStyle}>
+        <span>Pricing</span>
       </a>
     </section>
     <section style={contentStyle}>
